@@ -5,7 +5,7 @@ datasources:
 - name: Prometheus
   type: prometheus
   access: proxy
-  url: http://localhost:9090
+  url: http://prometheus:9090
   editable: true
 - name: MySQL datasource
   # <string, required> datasource type. Required
