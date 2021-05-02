@@ -75,8 +75,8 @@ services:
     #  - 9990:9090
     volumes:
       #- ./build/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
-      - /home/maborak/code/vagrant/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
       - prometheus-data:/prometheus
+      - /home/maborak/code/vagrant/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
     #command: --web.enable-lifecycle  --config.file=/etc/prometheus/prometheus.yml
   grafana:
     build:
